@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE tiles-definitions PUBLIC       
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"       
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="baseLayout" template="/tiles/layout.jsp">
+        <put-attribute name="header" value="/tiles/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/tiles/footer.jsp" />
+    </definition>
+    <definition name="loginAbogado" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/login.jsp" />
+    </definition>
+        <definition name="loginCliente" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/login.jsp" />
+    </definition>
+    <definition name="inicioAbogado" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/inicio.jsp" />
+    </definition>   
+        <definition name="inicioCliente" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/inicio.jsp" />
+    </definition>  
+     <definition name="verAbogado" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/datos.jsp" />
+    </definition>
+    <definition name="verCliente" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/datos.jsp" />
+    </definition>
+    <definition name="modificarAbogado" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/modificar.jsp" />
+    </definition>
+    <definition name="modificarCaso" extends="baseLayout">
+        <put-attribute name="body" value="/caso/modificar.jsp" />
+    </definition>
+    <definition name="modificarCliente" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/modificar.jsp" />
+    </definition>
+    <definition name="nuevoAbogado" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/form.jsp" />
+    </definition>
+    <definition name="resultadoAbogados" extends="baseLayout">
+        <put-attribute name="body" value="/abogado/listar.jsp" />
+    </definition>
+    <definition name="resultadoClientes" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/listar.jsp" />
+    </definition>
+    <definition name="resultadoCasos" extends="baseLayout">
+        <put-attribute name="body" value="/caso/listar.jsp" />
+    </definition>
+    <definition name="cambiarPassCliente" extends="baseLayout">
+        <put-attribute name="body" value="/cliente/password.jsp" />
+    </definition>
+         <definition name="error" extends="baseLayout">
+        <put-attribute name="body" value="/tiles/error.jsp" />
+    </definition>
+</tiles-definitions>
